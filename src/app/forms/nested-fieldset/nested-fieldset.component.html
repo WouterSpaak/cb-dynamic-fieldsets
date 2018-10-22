@@ -1,0 +1,6 @@
+<div [formGroup]="group"
+     fieldsetHost>
+  <h1 *ngIf="group.hasError('nonMatch')">TIK EFFE DEZELFDE WAARDEN IN MAN</h1>
+  <app-fieldset name="first"></app-fieldset>
+  <app-fieldset name="second"></app-fieldset>
+</div>

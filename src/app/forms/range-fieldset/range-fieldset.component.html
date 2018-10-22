@@ -1,0 +1,12 @@
+<div [formGroup]="group"
+     class="wrappitydoo">
+  <h2>{{ name }}</h2>
+  <div formArrayName="items">
+    <div *ngFor="let item of items.controls; index as i">
+      <input [formControlName]="i"
+             type="range"
+             min="0"
+             max="100">
+    </div>
+  </div>
+</div>
