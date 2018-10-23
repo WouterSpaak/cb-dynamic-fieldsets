@@ -4,4 +4,5 @@
          placeholder="foo">
   <input formControlName="bar"
          placeholder="bar">
+  <h4 *ngIf="group.get('foo').hasError('fromSideeffect')">SIDEEFFECTED</h4>
 </div>
